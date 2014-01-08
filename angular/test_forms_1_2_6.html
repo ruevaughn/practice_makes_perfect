@@ -1,0 +1,121 @@
+<div ng-controller='ArticleNewCtrl'>
+  <form novalidate class='form-horizontal' name='articleForm'>
+    <div class='form-group'>
+      <input type='text' class='form-control' ng-model='title' name='title' placeholder='Title' required>
+    </div>
+    <div class='form-group'>
+      <input type='text' class='form-control' ng-model='body' name='body' placeholder='Body' required>
+    </div>
+     <div class='form-group'>
+    <button class='btn btn-primary'>Submit</button>
+  </form>
+<br />
+
+<!-- PANELS -->
+
+  <div class='panel panel-success'>
+    <div class='panel-heading'>
+      <h4>Form State</h4>
+    </div>
+    <div class='panel-body'>
+      <p class='text-primary'>
+        <span class='text-muted'>Input Value:</span>
+        {{ articleForm }}
+      </p>
+      <p class='text-primary'>
+        <span class='text-muted'>$valid:</span>
+        {{ articleForm.$valid }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>$invalid:</span>
+        {{ articleForm.$invalid }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>Pristine:</span>
+        {{ articleForm.$pristine }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>Dirty:</span>
+        {{ articleForm.$dirty }}
+      </p>
+    </div>
+  </div>
+
+  <div class='panel panel-info'>
+    <div class='panel-heading'>
+      <h4>Input State - Title</h4>
+    </div>
+    <div class='panel-body'>
+      <p class='text-primary'>
+        <span class='text-muted'>Input Value:</span>
+        {{ title }}
+      </p>
+      <p class='text-primary'>
+        <span class='text-muted'>$valid:</span>
+        {{ articleForm.title.$valid }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>$invalid:</span>
+        {{ articleForm.title.$invalid }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>Pristine:</span>
+        {{ articleForm.title.$pristine }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>Dirty:</span>
+        {{ articleForm.title.$dirty }}
+      </p>
+    </div>
+  </div>
+
+  <div class='panel panel-info'>
+    <div class='panel-heading'>
+      <h4>Input State - Body</h4>
+    </div>
+    <div class='panel-body'>
+      <p class='text-primary'>
+        <span class='text-muted'>Input Value:</span>
+        {{ body }}
+      </p>
+      <p class='text-primary'>
+        <span class='text-muted'>$valid:</span>
+        {{ articleForm.body.$valid }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>$invalid:</span>
+        {{ articleForm.body.$invalid }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>Pristine:</span>
+        {{ articleForm.body.$pristine }}
+      </p>
+
+      <p class='text-primary'>
+        <span class='text-muted'>Dirty:</span>
+        {{ articleForm.body.$dirty }}
+      </p>
+    </div>
+  </div>
+<br />
+
+</div>
+    <!-- <form name="myForm" ng&#45;controller="ArticleNewCtrl"> -->
+    <!--   userType: <input name="input" ng&#45;model="userType" required> -->
+    <!--   <span class="error" ng&#45;show="myForm.input.$error.required">Required!</span><br> -->
+    <!--   <tt>userType = {{userType}}</tt><br> -->
+    <!--   <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br> -->
+    <!--   <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br> -->
+    <!--   <tt>myForm.$valid = {{myForm.$valid}}</tt><br> -->
+    <!--   <tt>myForm.$error.required = {{!!myForm.$error.required}}</tt><br> -->
+    <!--  </form> -->
+
+
